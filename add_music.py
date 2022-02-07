@@ -27,7 +27,10 @@ async def main():
     for title in tracks_to_add:
         if not(title == "" or ('#' in title)):
             result = spotify.search(q='track:' + title, type='track',limit=1)
-            track_uris.append(result['tracks']['items'][-1]['uri'])
+            try:
+                track_uris.append(result['tracks']['items'][-1]['uri'])
+            except:
+                print("Exception:",title.rstrip(),"not found")
 
     for uri in track_uris:
         spotify.add_to_queue(uri=uri, device_id=None)
