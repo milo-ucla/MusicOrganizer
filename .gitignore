@@ -1,6 +1,7 @@
 __pychache__/
 .vscode/
 
+*.csv
 .env
 .venv/
 songs.txt
