@@ -4,3 +4,5 @@ __pychache__/
 .env
 .venv/
 songs.txt
+comparison.txt
+not_found.txt
