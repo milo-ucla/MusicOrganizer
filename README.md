@@ -1,7 +1,7 @@
 # MusicOrganizer
 
 ## Purpose
-Easily manage your spotify library across accounts. Upload an entire library from a txt file, or download your library as a txt file to make a comprehensive list of all your music.
+Easily manage your spotify queue and library. Upload an entire library from a txt file, or queue a list of music all at once.
 
 ## Set Up
 First, run the command
