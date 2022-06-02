@@ -1,7 +1,7 @@
 # MusicOrganizer
 
 ## Purpose
-Easily manage your spotify library across accounts. Upload an entire library from a txt file, or download your library as a txt file to make a comprehensive list of all your music.
+Easily manage your spotify queue and library. Upload an entire library from a txt file, or queue a list of music all at once.
 
 ## Set Up
 First, run the command
@@ -11,6 +11,11 @@ First, run the command
 Next, run `$source .venv/bin/activate` in the project directory to start your venv. Once you are in a venv, you can install all dependencies for this project by running `$python3 -m pip install -r requirements.txt`. 
 
 After changing any requirements, use `pip freeze > requirements.txt` to update.
+
+Run `./setup.sh` to generate the auxillary text files you can use.
+
+## Scrape Your Local Music Folder
+`./get_songs.sh` will work in a folder with the following structure: $TARGET > Subdirectories > Your music files. It can easily be tweaked to your own needs with minimal shell scripting.
 
 ## Add to Queue (queue_music.py)
 Takes all songs in `songs.txt` as input, treating each line as a Spotify query. Adds top result to user's queue.
@@ -23,4 +28,4 @@ Output: Comparison.csv will contain information on song input and output, so you
 ### Bugs
 * Search is a little bit bad
 * I had to remove a lot of album art from my songs.txt file, using regex `[a-z0-9_/}/{/-]*.jpg\n` with find-and-replace worked.
-* It would
+* It would be nice to improve search function since Spotify has so many covers/remixes/karaoke versions that contaminate search results.
