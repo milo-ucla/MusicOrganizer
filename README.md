@@ -25,7 +25,7 @@ Takes all songs in `songs.txt` as input, treating any word that contains `#` as 
 Output: Comparison.csv will contain information on song input and output, so you can quickly note which songs did not search correctly. not_found.txt will contain all songs that Spotify couldn't find a result for.
 
 ## Maintanence
-### Bugs
-* Search is a little bit bad
+### Bugs and Notes
+* Previously committed temp-API key is deactivated.
 * I had to remove a lot of album art from my songs.txt file, using regex `[a-z0-9_/}/{/-]*.jpg\n` with find-and-replace worked.
 * It would be nice to improve search function since Spotify has so many covers/remixes/karaoke versions that contaminate search results.
